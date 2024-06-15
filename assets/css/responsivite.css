@@ -1,0 +1,296 @@
+:root  {
+    --blueZodiac:#0c2c43;
+    --teaGreen:#d8e5c333;
+    --comoGreen: #54816d;
+    --asparagus: #80a470;
+    --viridianGreen: #3d6b63;
+    --aossamer: #284f54;
+    --manatee: #8c9ca4;
+    --slateGray: #7c8c94;
+    --darkSlateBlue: #38586c;
+    --whiteDark: #ffffffb3;
+}
+.toggle-menu {
+    display: none;
+}
+@media only screen and (max-width: 1199px) and (min-width:992px) {
+    #clients .div-shadow {
+        width: 290px;
+        font-size: 14px;   
+    }
+    #apropos .contenaire img {
+        width: 425px;
+        height: 235px;
+
+    }
+    #apropos .contenaire div {
+        width: 425px;
+        font-size: 14px; 
+    }
+
+}
+/* :::::::::::::::::: RESPONSIVITE POUR LES TABLETTE :::::::::::::::::: */
+@media only screen and (max-width: 991px) and (min-width:768px) {
+  header  .menu {
+        display: none;
+    }
+    .toggle-menu {
+        display: flex;
+        width: 40px;
+        height: 30px;
+        position: relative;
+       margin: auto 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .toggle-menu::after {
+        content: "";
+        width: 40px;
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        box-shadow: 0 12px 0;
+        transition: ease 0.5s;
+        transform: translateY(-12px);
+        border-radius: 10px;
+
+    }
+    
+    .toggle-menu.active::after{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: none;
+    }
+    .toggle-menu::before {
+        content: "";
+        width: 40px;
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        transition:  0.5s;
+        transform: translateY(12px);
+        border-radius: 10px;
+    }
+    .toggle-menu.active::before{
+        transform: translateY(0) rotate(-135deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        font-weight: 900;
+        top: 48px;
+        right: 40px;
+        z-index: 10;
+        width: 30%;
+        background-color:#0c2c43e0;
+        height: 300px;
+        border-radius: 10px 0 10px 10px;
+
+    }
+
+    #services .nos-services {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    #services .nos-services div {
+        font-size: 20px;
+        width: 80%;
+        height: auto;
+        padding: 20px 50px;
+    }
+    #services .nos-services div img {
+        width: 180px;
+    }
+    #services .nos-services div h2 {
+        font-size: 25px;
+    }
+    #apropos .contenaire {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    #apropos .contenaire img {
+        width: 80%;
+        height: auto;
+    }
+    #apropos .contenaire div {
+        padding: 20px 50px;
+        font-size: 20px;
+        width: 80%;
+    }
+    #clients .contenaire {
+        flex-direction: column;
+        row-gap: 50px;
+        font-size: 20px;
+    }
+    #clients .div-shadow{
+        width: 80%;
+        padding: 20px 50px;
+    }
+    #clients .div-shadow .profil img {
+        width: 100px;
+    }
+    #clients .div-shadow .profil h2 {
+        font-size: 20px;
+    }
+    #clients .div-shadow .profil h2 .etoile img {
+        width: 20px;
+    }
+    #contact .contenaire {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    #contact .contenaire form {
+        width: 80%;
+        font-size: 20px;
+        padding: 60px 50px;
+        height: auto;
+    }
+    #contact .contenaire iframe {
+        width: 80%;
+        height: 500px;
+    }
+    .numero-contact{
+        flex-direction: column;
+    }
+}
+/* :::::::::::::::::: RESPONSIVITE POUR LES TELEPHONE :::::::::::::::::: */
+@media only screen and (max-width: 767px) {
+    header  .menu {
+        display: none;
+    }
+    .toggle-menu {
+        display: flex;
+        width: 40px;
+        height: 30px;
+        position: relative;
+       margin: auto 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .toggle-menu::after {
+        content: "";
+        width: 25px;
+        position: absolute;
+        height: 1.5px;
+        background-color: white;
+        box-shadow: 0 8px 0;
+        transition: ease 0.5s;
+        transform: translateY(-8px);
+        border-radius: 10px;
+
+    }
+    
+    .toggle-menu.active::after{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: none;
+    }
+    .toggle-menu::before {
+        content: "";
+        width: 25px;
+        position: absolute;
+        height: 1.5px;
+        background-color: white;
+        transition:  0.5s;
+        transform: translateY(8px);
+        border-radius: 10px;
+    }
+    .toggle-menu.active::before{
+        transform: translateY(0) rotate(-135deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        font-weight: 900;
+        top: 45px;
+        right: 0px;
+        z-index: 10;
+        width: 100%;
+        background-color:#0c2c43e0;
+        height: 300px;
+        border-radius: 10px 0 10px 10px;
+
+    }
+    nav .logo span {
+        display: none;
+    }
+    section h1 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    #accueil {
+        justify-content: center;
+        align-items: center;
+    }
+    #accueil h1{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 0;
+    }
+    #accueil p {
+        font-size: 16px;
+        text-align: center;
+    }
+    #services .nos-services {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #services .nos-services div {
+        width: 80%;
+        font-size: ;
+        height: auto;
+    }
+    #apropos .contenaire {
+        flex-direction: column;
+    }
+    #apropos .contenaire img {
+        width: 90%;
+        height: auto;
+    }
+    #apropos .contenaire div {
+        width: 90%;
+        height: auto;
+    }
+    #clients .contenaire {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #clients .contenaire .div-shadow {
+        width: 90%;
+    }
+    #contact .contenaire{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #contact .contenaire form {
+        width: 90%;
+        height: auto;
+    }
+    #contact .contenaire form h2{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    #contact .contenaire iframe {
+        width: 90%;
+        height: 250px;
+    }
+   
+    #contact .numero-contact .contenaire{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer  span {
+        display: none;
+    }
+  
+}

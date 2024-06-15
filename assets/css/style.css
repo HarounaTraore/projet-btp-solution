@@ -1,0 +1,390 @@
+:root  {
+    --blueZodiac:#0c2c43;
+    --teaGreen:#d8e5c333;
+    --comoGreen: #54816d;
+    --asparagus: #80a470;
+    --viridianGreen: #3d6b63;
+    --aossamer: #284f54;
+    --manatee: #8c9ca4;
+    --slateGray: #7c8c94;
+    --darkSlateBlue: #38586c;
+    --whiteDark: #ffffffb3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: popins, Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--teaGreen);
+}
+
+/* :::::::::::::::::: ESPACES GLOBALES:::::::::::::::: */
+.div-shadow {
+    box-shadow: 0px 5px 8px -3px var(--comoGreen);
+    background-color: white;
+    color: var(--blueZodiac);
+}
+section h1 {
+    font-size: 2.3rem;
+    color: var(--asparagus);
+    font-weight:900;
+    margin: 80px 0 10px 0;
+    text-align: center;
+}
+
+/* :::::::::::::::::::::::::::::EN TETE:::::::::::::::::::::::::::::: */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blueZodiac);
+    color: white;
+}
+nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 5px;
+}
+nav .logo img {
+    width: 35px;
+}
+nav .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* :::::::::::::::::::::::::::::::::: ACCUEIL :::::::::::::::::::::::::: */
+#accueil {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background: url("../images/heros.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 5% 50px 5%;
+    color: var(--whiteDark);
+    filter: contrast(1.1);
+}
+#accueil h1 {
+    font-size: 4vw;
+    margin-bottom: 20px;
+    color: var(--whiteDark);
+    text-align: left;
+}
+#accueil p {
+    font-size: 18px;
+}
+#accueil button {
+    width: max-content;
+    padding: 8px 50px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--blueZodiac);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* :::::::::::::::::::::::::::::::::: SERVICES :::::::::::::::::::::::::: */
+#services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services .nos-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+#services .nos-services div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+#services .nos-services div img {
+    width: 100px;
+}
+#services .nos-services div h2 {
+    font-size: 16px;
+    font-weight: 900;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* :::::::::::::::::::::::::::::::::: A PROPOS :::::::::::::::::::::::::: */
+#apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#apropos .contenaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+#apropos .contenaire img {
+    width: 450px;
+    border-radius: 15px;
+    height: 255px;
+
+}
+#apropos .contenaire div {
+    width: 450px;
+    padding: 35px 20px;
+    line-height: 2;
+    border-radius: 10px; 
+}
+#apropos .contenaire div p span {
+    font-weight: 900;
+}
+
+/* :::::::::::::::::::::::::::::::::: CLIENTS :::::::::::::::::::::::::: */
+#clients {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#clients .contenaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+}
+#clients .div-shadow {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    line-height: 1.3;
+    text-align: justify;
+}
+#clients .div-shadow .profil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#clients .div-shadow .profil img {
+    width: 60px;
+    border-radius: 50%;
+}
+#clients .div-shadow .profil h2 {
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+#clients .div-shadow .profil h2 .etoile img {
+    width: 16px;
+    margin-right: -8px;
+    padding: 0;
+}
+/* ::::::::::::::::::::::::::::::::::::::::: CONTACT ::::::::::::::::::::::::::::::::::::: */
+#contact {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#contact .contenaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+#contact .contenaire form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blueZodiac);
+    color: white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    height: 450px;
+    width: 45%;
+    min-width: 350px;
+}
+#contact .contenaire form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#contact .contenaire form .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+}
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.input-group textarea{
+    height: 100px;
+}
+#contact .contenaire form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: var(--blueZodiac);
+    font-weight: 900;
+    cursor: pointer;
+}
+#contact .contenaire iframe {
+    width: 45%;
+    min-width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    border: none;
+}
+
+.numero-contact {
+    background-color: var(--teaGreen);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+    margin-top: 20px;
+    color: var(--blueZodiac);
+}
+#contact .numero-contact .contenaire{
+    width: 50%;
+}
+.numero-contact .numero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numero-contact .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numero-contact .div-shadow {
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.numero-contact img {
+    width: 50px;
+}
+
+/* ::::::::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::::::::: */
+footer{
+    background-color: var(--blueZodiac);
+    width: 100%;
+    color: white;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px
+}
+footer .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+footer p {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+footer p {
+    font-size: 25px;
+
+}
+footer p span{
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+footer img {
+    width: 50px;
+}
+footer .reseaux-sociaux{
+    display: flex;
+}
+footer .reseaux-sociaux a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: 600;
+}
+footer .reseaux-sociaux a img {
+    width: 25px;
+}
