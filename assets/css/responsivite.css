@@ -14,6 +14,9 @@
     display: none;
 }
 @media only screen and (max-width: 1199px) and (min-width:992px) {
+    #accueil {
+        height: max-content;
+    }
     #clients .div-shadow {
         width: 290px;
         font-size: 14px;   
@@ -54,6 +57,7 @@
         transition: ease 0.5s;
         transform: translateY(-12px);
         border-radius: 10px;
+        cursor: pointer;
 
     }
     
@@ -171,6 +175,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       cursor: pointer;
     }
     .toggle-menu::after {
         content: "";
