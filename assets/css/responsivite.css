@@ -222,7 +222,7 @@
         width: 100%;
         background-color:#0c2c43e0;
         height: 300px;
-        border-radius: 10px 0 10px 10px;
+        border-radius: 0 0 10px 10px;
 
     }
     nav .logo span {
