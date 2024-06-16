@@ -193,13 +193,14 @@ nav .menu a {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:normal;
+    background: url('../images/heros.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-#apropos .contenaire img {
-    width:960px;
-    border-radius: 15px;
-    transform: scale(0.7);
-}
+
 #apropos .contenaire div {
     width: 450px;
     padding: 35px 20px;

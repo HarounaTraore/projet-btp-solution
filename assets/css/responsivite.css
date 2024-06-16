@@ -120,11 +120,6 @@
     #apropos .contenaire .image-equipe {
         width: 80%;
     }
-    #apropos .contenaire img {
-        width:100%;
-        border-radius: 15px;
-        transform: scale(1.5);
-    }
     #apropos .contenaire div {
         padding: 20px 50px;
         font-size: 20px;
@@ -263,12 +258,6 @@
     #apropos .contenaire .image-equipe {
         width: 90%;
     }
-    #apropos .contenaire img {
-        width:100%;
-        border-radius: 15px;
-        transform: scale(2);
-        height: auto;
-    }
     #apropos .contenaire div {
         width: 90%;
         height: auto;
@@ -297,7 +286,6 @@
     }
     #contact .contenaire iframe {
         width: 90%;
-        /* height: 250px; */
     }
    
     #contact .numero-contact .contenaire{
