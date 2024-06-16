@@ -23,7 +23,7 @@
     }
     #apropos .contenaire img {
         width: 425px;
-        height: 235px;
+        transform: scale(1.5);
 
     }
     #apropos .contenaire div {
@@ -117,9 +117,13 @@
         flex-direction: column;
         row-gap: 50px;
     }
-    #apropos .contenaire img {
+    #apropos .contenaire .image-equipe {
         width: 80%;
-        height: auto;
+    }
+    #apropos .contenaire img {
+        width:100%;
+        border-radius: 15px;
+        transform: scale(1.5);
     }
     #apropos .contenaire div {
         padding: 20px 50px;
@@ -163,7 +167,7 @@
     }
 }
 /* :::::::::::::::::: RESPONSIVITE POUR LES TELEPHONE :::::::::::::::::: */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     header  .menu {
         display: none;
     }
@@ -256,13 +260,21 @@
     #apropos .contenaire {
         flex-direction: column;
     }
-    #apropos .contenaire img {
+    #apropos .contenaire .image-equipe {
         width: 90%;
+    }
+    #apropos .contenaire img {
+        width:100%;
+        border-radius: 15px;
+        transform: scale(2);
         height: auto;
     }
     #apropos .contenaire div {
         width: 90%;
         height: auto;
+    }
+    #clients h1{
+        width: 90%;
     }
     #clients .contenaire {
         flex-direction: column;
@@ -285,7 +297,7 @@
     }
     #contact .contenaire iframe {
         width: 90%;
-        height: 250px;
+        /* height: 250px; */
     }
    
     #contact .numero-contact .contenaire{

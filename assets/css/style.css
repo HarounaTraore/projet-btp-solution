@@ -186,17 +186,26 @@ nav .menu a {
     gap: 20px;
     width: 90%;
 }
-#apropos .contenaire img {
-    width: 650px;
+#apropos .contenaire .image-equipe {
+    width: 460px;
     border-radius: 15px;
     height: 265px;
-
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apropos .contenaire img {
+    width:960px;
+    border-radius: 15px;
+    transform: scale(0.7);
 }
 #apropos .contenaire div {
     width: 450px;
     padding: 35px 20px;
     line-height: 2;
     border-radius: 10px; 
+    height: 265px;
 }
 #apropos .contenaire div p span {
     font-weight: 900;
