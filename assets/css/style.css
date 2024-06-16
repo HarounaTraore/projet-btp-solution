@@ -187,9 +187,9 @@ nav .menu a {
     width: 90%;
 }
 #apropos .contenaire img {
-    width: 450px;
+    width: 650px;
     border-radius: 15px;
-    height: 255px;
+    height: 265px;
 
 }
 #apropos .contenaire div {
@@ -310,9 +310,7 @@ nav .menu a {
     resize: none;
 }
 .input-group input:focus, .input-group textarea:focus {
-   /* outline: var(--darkSlateBlue) solid 2px; */
    box-shadow: 0 0 5px 1px var(--whiteDark) ;
-   /* background-color: rgba(255, 255, 255, 0.925); */
 }
 .input-group textarea{
     height: 100px;
