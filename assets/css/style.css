@@ -106,7 +106,7 @@ nav .menu a {
     height: max-content;
     display: flex;
     flex-direction: column;
-    background: url("../images/heros.jpg") no-repeat;
+    background: url("../images/heros.webp") no-repeat;
     background-size: cover;
     background-position: center;
     padding: 20px 5% 50px 5%;
@@ -194,7 +194,7 @@ nav .menu a {
     display: flex;
     justify-content: center;
     align-items:normal;
-    background: url('../images/heros.jpg') ;
+    background: url('../images/heros.webp') ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
